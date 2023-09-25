@@ -21,3 +21,9 @@ variable "prefix" {
   type      = string
   default   = "mcit2023"
 }
+
+variable "convention" {
+  type        = string
+  description = "Define naming convention"
+  default     = "kubz-canada"
+}
