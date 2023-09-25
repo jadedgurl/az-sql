@@ -10,29 +10,19 @@ variable "subscription_id"{
 variable "tenant_id"{
   type=string
 }
-variable "account_tier"{
-  type=string
-  default="Standard"
+
+variable "convention" {
+  type        = string
+  description = "Define naming convention"
+  default     = "kubz-central-canada"
 }
-variable "prefix"{
-  default="mcitblob"
+variable "resource_group_name" {
+   description  = "Name of the resource group in which resources will be created"
+   type         = string
+   default      = "rg"
 }
-variable "address_space"{
-  type=list(string)
-  default=["10.0.0.0/16","10.0.1.0/24"]
-}
-variable "computer_name"{
-  type=string
-}
-variable "admin_username"{
-  type=string
-}
-variable "admin_password"{
-  type=string
-}
-variable "administrator_login"{
-  type=string
-}
-variable "administrator_login_password"{
-  type=string
+
+variable "prefix" {
+  type      = string
+  default   = "mcit"
 }
