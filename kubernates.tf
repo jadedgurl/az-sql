@@ -3,7 +3,7 @@ locals{
 }
 
 resource "azurerm_kubernetes_cluster" "k8s" {
-  for_each            = { for cluster in local.cluster_names : cluster => cluster }
+  for_each            = { for cluster in local.clusters_names : cluster => cluster }
   name                = "k8s-${var.convention}-${each.key}"
   location            = azurerm_resource_group.azureresourcegroup.location
   resource_group_name = azurerm_resource_group.azureresourcegroup.name
