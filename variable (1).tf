@@ -11,11 +11,6 @@ variable "tenant_id"{
   type=string
 }
 
-variable "convention" {
-  type        = string
-  description = "Define naming convention"
-  default     = "kubz-central-canada"
-}
 variable "resource_group_name" {
    description  = "Name of the resource group in which resources will be created"
    type         = string
