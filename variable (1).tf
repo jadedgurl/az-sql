@@ -19,5 +19,5 @@ variable "resource_group_name" {
 
 variable "prefix" {
   type      = string
-  default   = "mcit"
+  default   = "mcit2023"
 }
